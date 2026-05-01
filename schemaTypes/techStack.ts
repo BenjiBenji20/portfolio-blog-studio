@@ -11,6 +11,6 @@ export default defineType({
             type: 'string',
             options: { list: ['Language', 'Deployment', 'Tool', 'AIAgent', 'Others'] }
         }),
-        defineField({ name: 'iconUrl', type: 'string' }),
+        defineField({ name: 'icon', type: 'customAsset' }),
     ],
 })
