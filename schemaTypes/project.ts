@@ -16,5 +16,12 @@ export default defineType({
         defineField({ name: 'shortDescription', type: 'text' }),
         defineField({ name: 'repositoryLink', type: 'url' }),
         defineField({ name: 'thumbnail', type: 'customAsset' }),
+        defineField({ 
+            name: 'priorityLevel', 
+            title: 'Priority Level', 
+            type: 'number',
+            description: 'Higher numbers appear first. Ties will fallback to date sorting. Default is 0.',
+            initialValue: 0
+        }),
     ],
 })
